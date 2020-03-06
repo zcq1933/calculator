@@ -1,9 +1,9 @@
 $(function(){
-    //get dom elem
+    //get dozrelem
     var $width = $('#width'),
         $height = $('#height'),
         $btn = $('#calculate'),
-        $per = $('#per'),
+        $per = $('#perimeter'),
         $area = $('#area');
     //event
     $btn.click(function(){
@@ -17,7 +17,7 @@ $(function(){
 
         //output
         // Math.round(p * Math.pow(10, 2)) / Math.pow(10, 2)
-        $per.val(Math.round(p * Math.pow(10, 2)) / Math.pow(10, 2));
+        $per.val(p);
         $area.val(a);
     });
-});
+})
